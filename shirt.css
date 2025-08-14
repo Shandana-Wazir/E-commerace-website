@@ -1,0 +1,185 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.thumbnail {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+  border-color: #0d6efd !important;
+}
+
+.product-card-img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card-img {
+  transform: scale(1.05);
+}
+
+.related-products-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.related-products-container::-webkit-scrollbar {
+  display: none;
+}
+
+.related-products-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.related-products-container>.product-card {
+  flex: 0 0 auto;
+  width: 220px;
+  margin-right: 1.5rem;
+}
+
+/* navbar     */
+.navbar-nav .nav-link:hover {
+  transform: scale(1.05);
+  color: #1e0ecb !important;
+}
+
+/* Breadcrumb link styles */
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+  /* Default text color */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline animation */
+.breadcrumb a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: lightgray;
+  /* Light gray underline */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.breadcrumb a:hover {
+  color: #1e90ff;
+  /* Light blue text color on hover */
+}
+
+.breadcrumb a:hover::after {
+  width: 100%;
+  background-color: #1e90ff;
+  /* Light blue underline on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#footer-media-a a {
+  font-size: 16px;
+  font-family: 'sans-serif';
+  text-decoration: none;
+  transition: color 0.5s ease, transform 0.5s ease;
+  display: inline-block;
+}
+
+#footer-media-a a:hover {
+  background-color: rgb(173, 172, 185);
+  transform: scale(1.3) rotate(30deg);
+  border-radius: 5px;
+  padding: 2px;
+
+}
+
+#footer-about a {
+  color: gray;
+  font-size: 16px;
+  font-family: 'sans-serif';
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+#footer-about a:hover {
+  background-color: gainsboro;
+  color: black;
+  border-radius: 1px;
+  padding: 1px;
+}
+
+#footer-partnership a {
+  color: gray;
+  font-size: 16px;
+  font-family: 'sans-serif';
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+#footer-partnership a:hover {
+  background-color: gainsboro;
+  color: black;
+  border-radius: 1px;
+  padding: 1px;
+
+}
+
+#footer-information a {
+  color: gray;
+  font-size: 16px;
+  font-family: 'sans-serif';
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+#footer-information a:hover {
+  background-color: gainsboro;
+  color: black;
+  border-radius: 1px;
+  padding: 1px;
+}
+
+#footer-user a {
+  color: gray;
+  font-size: 16px;
+  font-family: 'sans-serif';
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+#footer-user a:hover {
+  background-color: gainsboro;
+  color: black;
+  border-radius: 1px;
+  padding: 1px;
+}
+
+#footer-lang a {
+  padding: 10px 15px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+#footer-lang a:hover {
+  background-color: gainsboro;
+  color: black;
+}
