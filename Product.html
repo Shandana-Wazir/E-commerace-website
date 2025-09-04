@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brand</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="product.css">
+  
+  <!-- Custom JavaScript -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/enhanced.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Browse our extensive collection of products. Find the best deals on electronics, accessories, and more.">
+  <meta name="keywords" content="products, electronics, accessories, online shopping">
+  <meta name="author" content="Brand">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Products - Brand Store">
+  <meta property="og:description" content="Discover our wide range of products at competitive prices.">
+  <meta property="og:type" content="website">
+  
+  <!-- Preconnect to External Resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 shadow-sm">
+    <div class="container">
+      <!-- Brand + Mobile Toggler -->
+      <a href="index.html" class="navbar-brand fs-3 fw-bold text-primary">
+        <i class="fa-solid fa-lock me-2" aria-hidden="true"></i>Brand
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <!-- Left: Search Form -->
+        <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <select class="form-select me-2 d-none d-lg-block">
+            <option>All Categories</option>
+            <option>Mobiles</option>
+            <option>Laptops</option>
+            <option value="laptops">Laptops</option>
+            <option value="tablets">Tablets</option>
+            <option value="accessories">Accessories</option>
+            <option value="smart-watches">Smart Watches</option>
+            <option value="gaming">Gaming</option>
+            <option value="audio">Audio Devices</option>
+            <option value="home-appliances">Home Appliances</option>
+            <option value="cameras">Cameras</option>
+            <option value="printers">Printers & Scanners</option>
+            <option value="networking">Networking</option>
+            <option value="software">Software</option>
+            <option value="wearables">Wearables</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <!-- Main Navigation -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="Product.html"><i class="fa-solid fa-list" aria-hidden="true"></i> Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="Electronic.2.html"><i class="fa-solid fa-mobile" aria-hidden="true"></i> Electronics</a></li>
+          <li class="nav-item"><a class="nav-link" href="shirt.html"><i class="fa-solid fa-star" aria-hidden="true"></i> Featured</a></li>
+        </ul>
+        
+        <!-- User Navigation -->
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Profile"><i class="fa-solid fa-user" aria-hidden="true"></i> Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Messages"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Messages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Favorites"><i class="fa-solid fa-heart" aria-hidden="true"></i> Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> My Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Secondary Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 border-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNav"
+        aria-controls="secondaryNav" aria-expanded="false" aria-label="Toggle categories">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="secondaryNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="catMenu" role="button" data-bs-toggle="dropdown">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="catMenu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><a class="dropdown-item" href="#">Order History</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Hot Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gift Boxes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="helpMenu" role="button" data-bs-toggle="dropdown">
+              Help
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="helpMenu">
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Feedback</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Language & Shipping -->
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langMenu" role="button" data-bs-toggle="dropdown">
+              English, USD
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langMenu">
+              <li><a class="dropdown-item" href="#">Français, EUR</a></li>
+              <li><a class="dropdown-item" href="#">English, USD</a></li>
+              <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
+              <li><a class="dropdown-item" href="#">Italiano, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch, EUR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="countryMenu" role="button"
+              data-bs-toggle="dropdown">
+              Ship to <img src="https://flagcdn.com/w20/pk.png" alt="PK Flag" class="ms-1" width="20">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="countryMenu">
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/pk.png" class="me-2">Pakistan</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/us.png" class="me-2">United
+                  States</a></li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/au.png" class="me-2">Australia</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/de.png" class="me-2">GermAny</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/ae.png" class="me-2">UAE</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="py-2 bg-light border-bottom">
+    <div class="container-fluid">
+      <div class="row justify-content-center" style="margin-left: 30px;">
+        <div class="col-12 col-md-10">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Clothings</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Men's wear</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Summer clothing</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container for the entire page content -->
+  <div class="container-fluid py-4 bg-light">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-6">
+            <!-- Category and item count -->
+            <p class="mb-0 text-muted">
+              <span class="fw-bold text-dark">Category:</span> Mobile accessory
+              <span class="ms-3 text-muted">12,911 items in Mobile accessory</span>
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-inline-flex align-items-center">
+              <span class="me-3 text-muted">
+                <i class="fas fa-check-circle text-success me-1"></i> Verified only
+              </span>
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Featured
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Newest</a></li>
+                  <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                  <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of Top Header/Product Count Section -->
+
+        <!-- Main Content Area: Left Sidebar (Filters) and Right Product Grid -->
+        <div class="row g-4">
+          <!-- Left Sidebar: Filters -->
+          <div class="col-lg-3 col-md-4">
+
+            <!-- Category -->
+            <div class="card mb-4 filter-card">
+              <div class="card-header bg-white fw-bold">Category</div>
+              <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#" class="filter-link d-block py-1">Mobile accessory</a></li>
+                  <li><a href="#" class="filter-link d-block py-1">Electronics</a></li>
+                  <li><a href="#" class="filter-link d-block py-1">Smartphones</a></li>
+                  <li><a href="#" class="filter-link d-block py-1">Modern tech</a></li>
+                  <li><a href="#" class="filter-link d-block py-1 text-primary">View more</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Brands Filter Card -->
+            <div class="card mb-4 filter-card">
+              <div class="card-header bg-white fw-bold">Brands</div>
+              <div class="card-body">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="brandSamsung">
+                  <label class="form-check-label" for="brandSamsung">Samsung</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="brandApple">
+                  <label class="form-check-label" for="brandApple">Apple</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="brandHuawei">
+                  <label class="form-check-label" for="brandHuawei">Huawei</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="brandPoco">
+                  <label class="form-check-label" for="brandPoco">Poco</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="brandLenovo">
+                  <label class="form-check-label" for="brandLenovo">Lenovo</label>
+                </div>
+                <a href="#" class="text-primary small" style="text-decoration: none;">View more</a>
+              </div>
+            </div>
+
+            <!-- Features Filter Card -->
+            <div class="card mb-4 filter-card">
+              <div class="card-header bg-white fw-bold">Features</div>
+              <div class="card-body">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="featureMetallic">
+                  <label class="form-check-label" for="featureMetallic">Metallic</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="featurePlastic">
+                  <label class="form-check-label" for="featurePlastic">Plastic cover</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="featureSuperPower">
+                  <label class="form-check-label" for="featureSuperPower">Super power</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="featureLargeMemory">
+                  <label class="form-check-label" for="featureLargeMemory">Large Memory</label>
+                </div>
+                <a href="#" class="text-primary small" style="text-decoration: none;">View more</a>
+              </div>
+            </div>
+
+            <!-- Price Range Filter Card -->
+            <div class="card mb-4 filter-card">
+              <div class="card-header bg-white fw-bold">Price range</div>
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <input type="number" class="form-control form-control-sm me-2" placeholder="Min">
+                  <span class="text-muted">-</span>
+                  <input type="number" class="form-control form-control-sm ms-2" placeholder="Max">
+                </div>
+                <button class="btn btn-primary btn-sm w-100">Apply</button>
+              </div>
+            </div>
+
+            <!-- Condition Filter Card -->
+            <div class="card mb-4 filter-card">
+              <div class="card-header bg-white fw-bold">Condition</div>
+              <div class="card-body">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="conditionRadio" id="conditionAny" checked>
+                  <label class="form-check-label" for="conditionAny">Any</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="conditionRadio" id="conditionNew">
+                  <label class="form-check-label" for="conditionNew">New</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="conditionRadio" id="conditionUsed">
+                  <label class="form-check-label" for="conditionUsed">Used</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="radio" name="conditionRadio" id="conditionOldItems">
+                  <label class="form-check-label" for="conditionOldItems">Old items</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ratings Filter Card -->
+            <div class="card mb-4 p-2 filter-card">
+              <div class="card-header bg-white fw-bold">Ratings</div>
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2 g-5 p-2">
+                  <div class="text-warning me-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                  <span class="text-muted">5 stars</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="text-warning me-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">4 stars & up</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="text-warning me-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">3 stars & up</span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                  <div class="text-warning me-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                      class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">2 stars & up</span>
+                </div>
+                 <div class="d-flex align-items-center mb-2">
+                  <div class="text-warning me-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                      class="far fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                  <span class="text-muted">1 star & up</span>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End of Left Sidebar -->
+
+          <!-- Right Product Listing Grid -->
+          <div class="col-lg-9 col-md-8">
+            <div class="row row-cols-1 g-4">
+              <!-- Product Card 1 -->
+              <div class="col">
+                <a href="#" class="card h-100 product-card-hover text-decoration-none text-dark">
+                  <div class="d-flex flex-row">
+                    <div class="product-image-container position-relative overflow-hidden flex-shrink-0">
+                      <img src="./Images/1.png" alt="Product Image" class="img-fluid product-image"
+                        style="height: 230px; padding: 30px; margin-top: 15px;">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between flex-grow-1 product-card-content"
+                      style="margin-top: 3%; margin-left: 1%;">
+                      <div>
+                      <button class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0  wishlist-btn"
+                        style="margin-top: 28px; margin-right: 48px;"><i class="far fa-heart"></i></button>
+                        <h5>Canon Cmera EOS 2000, Black 10x zoom</h5>
+                        <h5 class="card-title fw-bold mb-1">$998.00</h5>
+                        <p class="card-text text-muted small mb-2">
+                          <i class="fas fa-star text-warning"></i> 4.5 <span class="ms-2">(154 reviews)</span>
+                        </p>
+                        <p class="card-text mb-2 product-description">
+                          Canon Camera EOS 200D, Black 10x Zoom, 16GB RAM, 128GB SSD, 24MP, 4K Video
+                        </p>
+                        <p class="card-text text-success small mb-2">Free Shipping</p>
+                      </div>
+                      <div class="mt-auto">
+                        <button class="btn btn-primary btn-sm product-view-details-btn" style="margin-bottom: 4%;">View
+                          details</button>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Card 2 -->
+              <div class="col">
+                <a href="#" class="card h-100 product-card-hover text-decoration-none text-dark">
+                  <div class="d-flex flex-row">
+                    <div class="product-image-container position-relative overflow-hidden flex-shrink-0">
+                      <img src="./Images/222 (3).png" alt="Product Image" class="img-fluid product-image"
+                        style="height: 200px; padding: 30px; margin-top: 15px;">                  
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between flex-grow-1 product-card-content"
+                      style="margin-top: 3%; margin-left: 1%;">
+                      <div>
+                          <button class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0  wishlist-btn"
+                        style="margin-top: 33px; margin-right: 33px;"><i class="far fa-heart"></i></button>
+                        <h5>GoPro HERO6 4K Action Camera - Black</h5>
+                        <h5 class="card-title fw-bold mb-1">$998.00</h5>
+                        <p class="card-text text-muted small mb-2">
+                          <i class="fas fa-star text-warning"></i> 4.2 <span class="ms-2">(114 reviews)</span>
+                        </p>
+                        <p class="card-text mb-2 product-description">
+                          GoPro HERO9 4K Action Camera - Black, Waterproof, Voice Control, GPS
+                        </p>
+                        <p class="card-text text-success small mb-2">Free Shipping</p>
+                      </div>
+                      <div class="mt-auto">
+                        <button class="btn btn-primary btn-sm product-view-details-btn" style="margin-bottom: 4%;">View
+                          details</button>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Card 3 -->
+              <div class="col">
+                <a href="#" class="card h-100 product-card-hover text-decoration-none text-dark">
+                  <div class="d-flex flex-row">
+                    <div class="product-image-container position-relative overflow-hidden flex-shrink-0">
+                      <img src="./Images/5.png" alt="Product Image" class="img-fluid product-image"
+                        style="height: 230px; padding: 30px; margin-top: 15px;">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between flex-grow-1 product-card-content"
+                      style="margin-top: 3%; margin-left: 1%;">
+                      <div>
+                        <button class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0 wishlist-btn"
+                        style="margin-top:40px; margin-right: 40px;"><i class="far fa-heart"></i></button>
+                        <h5>Canon Cmera EOS 2000, Black 10x zoom</h5>
+                        <h5 class="card-title fw-bold mb-1">$998.00</h5>
+                        <p class="card-text text-muted small mb-2">
+                          <i class="fas fa-star text-warning"></i> 4.0 <span class="ms-2">(80 reviews)</span>
+                        </p>
+                        <p class="card-text mb-2 product-description">
+                          GoPro HERO8 4K Action Camera - Black, HyperSmooth 2.0, TimeWarp 2.0
+                        </p>
+                        <p class="card-text text-success small mb-2">Free Shipping</p>
+                      </div>
+                      <div class="mt-auto">
+                        <button class="btn btn-primary btn-sm product-view-details-btn" style="margin-bottom: 4%;">View
+                          details</button>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Product Card 4 -->
+              <div class="col">
+                <a href="#" class="card h-100 product-card-hover text-decoration-none text-dark">
+                  <div class="d-flex flex-row">
+                    <div class="product-image-container position-relative overflow-hidden flex-shrink-0">
+                      <img src="./Images/222 (1).png" alt="Product Image" class="img-fluid product-image"
+                        style="height: 230px; padding: 30px; margin-top: 15px;">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between flex-grow-1 product-card-content"
+                      style="margin-top: 3%; margin-left: 1%;">
+                      <div>
+                          <button class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0  wishlist-btn"
+                        style="margin-top: 37px; margin-right: 44px;"><i class="far fa-heart"></i></button>
+                        <h5>Canon Cmera EOS 2000, Black 10x zoom</h5>
+                        <h5 class="card-title fw-bold mb-1">$998.00</h5>
+                        <p class="card-text text-muted small mb-2">
+                          <i class="fas fa-star text-warning"></i> 4.7 <span class="ms-2">(154 reviews)</span>
+                        </p>
+                        <p class="card-text mb-2 product-description">
+                          Dell XPS 15 Laptop - Intel Core i7, 16GB RAM, 512GB SSD, NVIDIA RTX 3050
+                        </p>
+                        <p class="card-text text-success small mb-2">Free Shipping</p>
+                      </div>
+                      <div class="mt-auto">
+                        <button class="btn btn-primary btn-sm product-view-details-btn" style="margin-bottom: 4%;">View
+                          details</button>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Product Card 5 -->
+
+              <div class="col">
+                <a href="#" class="card h-100 product-card-hover text-decoration-none text-dark">
+                  <div class="d-flex flex-row">
+                    <div class="product-image-container position-relative overflow-hidden flex-shrink-0">
+                      <img src="./Images/8.png" alt="Product Image" class="img-fluid product-image"
+                        style="height: 230px; padding: 30px; margin-top: 15px;">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between flex-grow-1 product-card-content"
+                      style="margin-top: 3%; margin-left: 1%;">
+                      <div>
+                          <button class="btn btn-light btn-sm rounded-circle position-absolute top-0 end-0  wishlist-btn "
+                        style="margin-top: 36px; margin-right: 39px;"><i class="far fa-heart"></i></button>
+                        <h5>GoPro HERO6 4K Action Camera - Black</h5>
+                        <h5 class="card-title fw-bold mb-1">$998.00</h5>
+                        <p class="card-text text-muted small mb-2">
+                          <i class="fas fa-star text-warning"></i> 4.1 <span class="ms-2">(95 reviews)</span>
+                        </p>
+                        <p class="card-text mb-2 product-description">
+                          Samsung Galaxy Tab S8 - 11-inch, Snapdragon 8 Gen 1, S Pen included
+                        </p>
+                        <p class="card-text text-success small mb-2">Free Shipping</p>
+                      </div>
+                      <div class="mt-auto">
+                        <button class="btn btn-primary btn-sm product-view-details-btn" style="margin-bottom: 4%;">View
+                          details</button>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of Main Content Area -->
+
+        <!-- Bottom Action Bar -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <div class="d-inline-flex align-items-center bg-white p-3 rounded shadow-sm action-bar-hover">
+              <button class="btn btn-outline-secondary me-3"><i class="fas fa-play me-2"></i>View more</button>
+              <button class="btn btn-outline-primary"><i class="fas fa-edit me-2"></i>Ask to edit</button>
+            </div>
+          </div>
+        </div> <!-- End of Bottom Action Bar -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Subscribe to our newsletter -->
+  <div class="container-fluid py-5" style="background: linear-gradient(135deg, #0d6efd 0%, #6ea8fe 100%);">
+    <div class="row justify-content-center" >
+      <div class="col-10 col-md-8 text-center text-white">
+        <h4 class="fw-bold mb-2">Subscribe on our newsletter</h4>
+        <p class="mb-4">
+          <small>Get daily news on upcoming offers from many suppliers all over the world</small>
+        </p>
+        <!-- Form -->
+        <form class="row g-2 justify-content-center">
+          <div class="col-12 col-md-8">
+            <div class="input-group">
+              <span class="input-group-text bg-white">
+                <i class="fa-solid fa-envelope text-muted"></i>
+              </span>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-12 col-md-auto">
+            <button class="btn btn-light text-primary px-4 fw-bold" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer section -->
+  <footer class="bg-white text-dark border-top  pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand & Social -->
+        <div class="col-md-2">
+          <h4 class="fw-bold text-primary mb-3">
+            <i class="fa-solid fa-lock"></i> Brand
+          </h4>
+          <p class="text-muted small">Best information <br> about the company </p>
+          <div class="d-flex gap-3" id="footer-media-a">
+            <a href="#" class="text-dark fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">About</h6>
+          <ul class="list-unstyled small" id="footer-about">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">About Us</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Find Store</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Categories</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Partnership -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Partnership</h6>
+          <ul class="list-unstyled small" id="footer-partnership">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Affiliate Program</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Partners</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Collaboration</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Offers</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Information</h6>
+          <ul class="list-unstyled small" id="footer-information">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Help Center</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Money Refund</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Shipping</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- For Users -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">For Users</h6>
+          <ul class="list-unstyled small" id="footer-user">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Login</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Register</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Settings</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">My Orders</a></li>
+          </ul>
+        </div>
+
+        <!-- Get App -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Get App</h6>
+          <a href="https://play.google.com/store" target="_blank" class="d-block mb-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" class="img-fluid" style="max-height: 42px;">
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"
+              class="img-fluid" style="max-height: 60px; height: 48px;">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer Row -->
+      <div class="row mt-4 border-top pt-3 bg-light text-secondary text-center text-md-start">
+        <div class="col-md-6 text-center text-md-start small">
+          © 2025 Ecommerce. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="dropdown">
+            <a href="#" class="text-secondary text-decoration-none dropdown-toggle" id="languageDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              English, USD <i class="fa fa-angle-up"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown" id="footer-lang">
+              <li><a class="dropdown-item" href="#">Urdu, PKR</a></li>
+              <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
+              <li><a class="dropdown-item" href="#">French, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Français, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch, EUR</a></li>
+              <li><a class="dropdown-item" href="#">English, USD</a></li>
+              <li><a class="dropdown-item" href="#">Español, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Italiano, EUR</a></li>
+              <li><a class="dropdown-item" href="#">中文, CNY</a></li>
+              <li><a class="dropdown-item" href="#">日本語, JPY</a></li>
+              <li><a class="dropdown-item" href="#">Português, BRL</a></li>
+              <li><a class="dropdown-item" href="#">Русский, RUB</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe, TRY</a></li>
+              <li><a class="dropdown-item" href="#">हिन्दी, INR</a></li>
+              <li><a class="dropdown-item" href="#">한국어, KRW</a></li>
+              <li><a class="dropdown-item" href="#">فارسی, IRR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Back to Top Button -->
+  <button class="back-to-top btn btn-primary rounded-circle" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <!-- Cart Counter -->
+  <div class="cart-counter badge bg-danger rounded-pill position-fixed d-none"></div>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="position-fixed top-0 start-0 w-100 h-100 d-none">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Quick View</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="" alt="" class="img-fluid" id="quickViewImage">
+            </div>
+            <div class="col-md-6">
+              <h4 id="quickViewTitle"></h4>
+              <p id="quickViewPrice" class="text-primary fw-bold"></p>
+              <p id="quickViewDescription"></p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-outline-primary add-to-wishlist">Add to Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

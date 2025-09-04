@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page Layout</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./shirt.css">
+  
+  <!-- Custom JavaScript -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/enhanced.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Check out our featured products and special deals. Limited time offers on premium items.">
+  <meta name="keywords" content="featured products, special offers, deals, premium products">
+  <meta name="author" content="Brand">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Featured Products - Brand Store">
+  <meta property="og:description" content="Discover our premium selection of featured products at amazing prices.">
+  <meta property="og:type" content="website">
+  
+  <!-- Preconnect to External Resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 shadow-sm">
+    <div class="container">
+      <!-- Brand + Mobile Toggler -->
+      <a href="index.html" class="navbar-brand fs-3 fw-bold text-primary">
+        <i class="fa-solid fa-lock me-2" aria-hidden="true"></i>Brand
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <!-- Left: Search Form -->
+        <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <select class="form-select me-2 d-none d-lg-block">
+            <option>All Categories</option>
+            <option>Mobiles</option>
+            <option>Laptops</option>
+            <option value="laptops">Laptops</option>
+            <option value="tablets">Tablets</option>
+            <option value="accessories">Accessories</option>
+            <option value="smart-watches">Smart Watches</option>
+            <option value="gaming">Gaming</option>
+            <option value="audio">Audio Devices</option>
+            <option value="home-appliances">Home Appliances</option>
+            <option value="cameras">Cameras</option>
+            <option value="printers">Printers & Scanners</option>
+            <option value="networking">Networking</option>
+            <option value="software">Software</option>
+            <option value="wearables">Wearables</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <!-- Main Navigation -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="Product.html"><i class="fa-solid fa-list" aria-hidden="true"></i> Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="Electronic.2.html"><i class="fa-solid fa-mobile" aria-hidden="true"></i> Electronics</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cart.html"><i class="fa-solid fa-star" aria-hidden="true"></i> Featured</a></li>
+        </ul>
+        
+        <!-- User Navigation -->
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Profile"><i class="fa-solid fa-user" aria-hidden="true"></i> Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Messages"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Messages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Favorites"><i class="fa-solid fa-heart" aria-hidden="true"></i> Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="shopingCart.html" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> My Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secondary Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 border-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNav"
+        aria-controls="secondaryNav" aria-expanded="false" aria-label="Toggle categories">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="secondaryNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="catMenu" role="button" data-bs-toggle="dropdown">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="catMenu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><a class="dropdown-item" href="#">Order History</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Hot Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gift Boxes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="helpMenu" role="button" data-bs-toggle="dropdown">
+              Help
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="helpMenu">
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Feedback</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Language & Shipping -->
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langMenu" role="button" data-bs-toggle="dropdown">
+              English, USD
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langMenu">
+              <li><a class="dropdown-item" href="#">Français, EUR</a></li>
+              <li><a class="dropdown-item" href="#">English, USD</a></li>
+              <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
+              <li><a class="dropdown-item" href="#">Italiano, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch, EUR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="countryMenu" role="button"
+              data-bs-toggle="dropdown">
+              Ship to <img src="https://flagcdn.com/w20/pk.png" alt="PK Flag" class="ms-1" width="20">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="countryMenu">
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/pk.png" class="me-2">Pakistan</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/us.png" class="me-2">United
+                  States</a></li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/au.png" class="me-2">Australia</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/de.png" class="me-2">GermAny</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/ae.png" class="me-2">UAE</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="py-2 bg-light border-bottom">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Clothings</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Men's wear</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Summer clothing</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page layout -->
+  <div class="container my-4 my-md-5">
+    <!-- Main Product Section -->
+    <div class="card shadow-sm border-0">
+      <div class="card-body p-4">
+        <div class="row g-4">
+
+          <!-- Column 1: Product Image Gallery -->
+          <div class="col-lg-4 d-flex flex-column align-items-center">
+            <div class="main-image mb-3 border rounded overflow-hidden">
+              <img id="mainProductImage" src="./Images/cloths/main.jpg" alt="Main Product Image" class="img-fluid">
+            </div>
+            <div class="d-flex gap-2">
+              <img src="./Images/cloths/r1.jpg" alt="Thumbnail 1" class="thumbnail border border-2 rounded active"
+                style="width: 80px; height: 80px; object-fit: cover;">
+              <img src="./Images/cloths/r2.jpg" alt="Thumbnail 2" class="thumbnail border border-2 rounded"
+                style="width: 80px; height: 80px; object-fit: cover;">
+              <img src="./Images/cloths/r3.jpg" alt="Thumbnail 3" class="thumbnail border border-2 rounded"
+                style="width: 80px; height: 80px; object-fit: cover;">
+
+              <img src="./Images/cloths/r44.jpg" alt="Thumbnail 4" class="thumbnail border border-2 rounded"
+                style="width: 80px; height: 80px; object-fit: cover;">
+
+            </div>
+          </div>
+
+          <!-- Column 2: Product Details -->
+          <div class="col-lg-5">
+            <span class="badge bg-success-subtle text-success-emphasis rounded-pill px-2 py-1 mb-2">✓ In stock</span>
+            <h1 class="h3 fw-bold text-dark my-3">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+            <div class="d-flex align-items-center gap-3 text-muted mb-4">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star-half-alt text-warning"></i>
+                <span class="ms-2 fw-semibold">4.5</span>
+              </div>
+              <span>•</span>
+              <span>32 reviews</span>
+              <span>•</span>
+              <span>154 sold</span>
+            </div>
+
+            <div class="pricing bg-light p-3 rounded mb-4">
+              <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center">
+                <div>
+                  <span class="h3 fw-bold text-danger">$98.00</span>
+                  <p class="text-muted small">50-100 pcs</p>
+                </div>
+                <div class="mt-2 mt-sm-0">
+                  <span class="h4 fw-bold text-dark">$90.00</span>
+                  <p class="text-muted small">100-700 pcs</p>
+                </div>
+                <div class="mt-2 mt-sm-0">
+                  <span class="h4 fw-bold text-dark">$78.00</span>
+                  <p class="text-muted small">700+ pcs</p>
+                </div>
+              </div>
+              <p class="small text-primary fw-semibold mt-2">Price: Negotiable</p>
+            </div>
+
+            <div class="product-specs text-secondary">
+              <p><span class="fw-semibold text-dark" style="width: 120px; display: inline-block;">Type:</span> Classic
+                shoes</p>
+              <p><span class="fw-semibold text-dark" style="width: 120px; display: inline-block;">Material:</span>
+                Plastic material</p>
+              <p><span class="fw-semibold text-dark" style="width: 120px; display: inline-block;">Design:</span> Modern
+                Nice</p>
+              <p><span class="fw-semibold text-dark" style="width: 120px; display: inline-block;">Customization:</span>
+                Customized logo</p>
+              <p><span class="fw-semibold text-dark" style="width: 120px; display: inline-block;">Protection:</span>
+                Refund Policy</p>
+              <p><span class="fw-semibold text-dark" style="width: 120px; display: inline-block;">Warranty:</span> 2
+                years full warranty</p>
+            </div>
+          </div>
+
+          <!-- Column 3: Supplier Info -->
+          <div class="col-lg-3">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="bg-primary text-white d-flex align-items-center justify-content-center rounded me-3"
+                      style="width: 50px; height: 50px;">
+                      <span class="h4 mb-0 fw-bold">R</span>
+                    </div>
+                    <div>
+                      <p class="text-muted small mb-0">Supplier</p>
+                      <p class="fw-bold text-dark mb-0">Guanjo Trading LLC</p>
+                    </div>
+                  </div>
+                  <div class="small text-secondary">
+                    <p><i class="fas fa-map-marker-alt me-2" style="width: 20px;"></i> Germany, Berlin</p>
+                    <p><i class="fas fa-check-circle text-success me-2" style="width: 20px;"></i> Verified Seller</p>
+                    <p><i class="fas fa-globe-americas me-2" style="width: 20px;"></i> Worldwide shipping</p>
+                  </div>
+                </div>
+                <div class="mt-4 d-grid gap-2">
+                  <button class="btn btn-primary fw-bold py-2">Send inquiry</button>
+                  <button class="btn btn-outline-secondary fw-bold py-2">Seller's profile</button>
+                  <a href="#" class="btn btn-link text-primary text-decoration-none mt-2">
+                    <i class="far fa-heart me-2"></i> Save for later
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Product Section -->
+
+    <div class="row g-4 mt-4">
+      <!-- Left Column: Description & Details -->
+      <div class="col-lg-9">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Description</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Shipping</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About seller</a></li>
+            </ul>
+            <!-- Tab Content -->
+            <div class="mt-4 text-secondary">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+
+              <!-- Specifications Table -->
+              <table class="table table-bordered table-striped mt-4">
+                <tbody>
+                  <tr>
+                    <td class="fw-semibold bg-light" style="width: 25%;">Model</td>
+                    <td>#65786E7</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold bg-light" style="width: 25%;">Style</td>
+                    <td>Classic style</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold bg-light" style="width: 25%;">Certificate</td>
+                    <td>ISO-898821212</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold bg-light" style="width: 25%;">Size</td>
+                    <td>34mm x 450mm x 19mm</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-semibold bg-light" style="width: 25%;">Memory</td>
+                    <td>36GB RAM</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Features List -->
+              <ul class="list-unstyled mt-4">
+                <li class="mb-2"><i class="fas fa-check text-success me-3"></i> Some great feature name here</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-3"></i> Lorem ipsum dolor sit amet, consectetur
+                </li>
+                <li class="mb-2"><i class="fas fa-check text-success me-3"></i> Duis aute irure dolor in reprehenderit
+                </li>
+                <li class="mb-2"><i class="fas fa-check text-success me-3"></i> Some great feature name here</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: You May Like -->
+      <div class="col-lg-3">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="h5 fw-bold text-dark mb-4">You may like</h3>
+            <div class="vstack gap-3">
+              <!-- Item 1 -->
+              <a href="#" class="d-flex align-items-center gap-3 text-decoration-none">
+                <img src="./Images/cloths/sp/1.png" alt="Blazers Set" class="rounded"
+                  style="width: 64px; height: 64px; object-fit: cover;">
+                <div>
+                  <p class="fw-semibold text-dark mb-1">Men Blazers Sets Elegant Formal</p>
+                  <p class="text-muted small mb-0">$7.00 - $98.50</p>
+                </div>
+              </a>
+              <!-- Item 2 -->
+              <a href="#" class="d-flex align-items-center gap-3 text-decoration-none">
+                <img src="./Images/cloths/sp/2.png" alt="Polo Contrast" class="rounded"
+                  style="width: 64px; height: 64px; object-fit: cover;">
+                <div>
+                  <p class="fw-semibold text-dark mb-1">Men Shirt Sleeve Polo Contrast</p>
+                  <p class="text-muted small mb-0">$7.00 - $98.50</p>
+                </div>
+              </a>
+              <!-- Item 3 -->
+              <a href="#" class="d-flex align-items-center gap-3 text-decoration-none">
+                <img src="./Images/cloths/sp/4.jpg" alt="Apple Watch" class="rounded"
+                  style="width: 64px; height: 64px; object-fit: cover;">
+                <div>
+                  <p class="fw-semibold text-dark mb-1">Apple Watch Series Space Gray</p>
+                  <p class="text-muted small mb-0">$7.00 - $98.50</p>
+                </div>
+              </a>
+              <!-- Item 4 -->
+              <a href="#" class="d-flex align-items-center gap-3 text-decoration-none">
+                <img src="./Images/cloths/sp/5 (2).png" alt="Basketball Crew" class="rounded"
+                  style="width: 64px; height: 64px; object-fit: cover;">
+                <div>
+                  <p class="fw-semibold text-dark mb-1">Basketball Crew Socks Long Stuff</p>
+                  <p class="text-muted small mb-0">$7.00 - $98.50</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products Section -->
+    <div class="card shadow-sm border-0 mt-4">
+      <div class="card-body p-4">
+        <h2 class="h4 fw-bold text-dark mb-4">Related products</h2>
+        <div class="row g-3">
+          <!-- Product Card 1 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card product-card border-0 h-100">
+              <div class="overflow-hidden rounded">
+                <img src="./Images/5.png" class="card-img-top bg-light product-card-img" alt="Related Product">
+              </div>
+              <div class="card-body px-0 py-2">
+                <h5 class="card-title h6 fw-semibold text-dark mb-1">Xiaomi Redmi 8 Original</h5>
+                <p class="card-text text-muted">$32.00-$40.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card product-card border-0 h-100">
+              <div class="overflow-hidden rounded">
+                <img src="./Images/3.png" class="card-img-top bg-light product-card-img" alt="Related Product">
+              </div>
+              <div class="card-body px-0 py-2">
+                <h5 class="card-title h6 fw-semibold text-dark mb-1">Xiaomi Redmi 8 Original</h5>
+                <p class="card-text text-muted">$32.00-$40.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card product-card border-0 h-100">
+              <div class="overflow-hidden rounded">
+                <img src="./Images/7.png" class="card-img-top bg-light product-card-img" alt="Related Product">
+              </div>
+              <div class="card-body px-0 py-2">
+                <h5 class="card-title h6 fw-semibold text-dark mb-1">Xiaomi Redmi 8 Original</h5>
+                <p class="card-text text-muted">$32.00-$40.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card product-card border-0 h-100">
+              <div class="overflow-hidden rounded">
+                <img src="./Images/8.png" class="card-img-top bg-light product-card-img" alt="Related Product">
+              </div>
+              <div class="card-body px-0 py-2">
+                <h5 class="card-title h6 fw-semibold text-dark mb-1">Xiaomi Redmi 8 Original</h5>
+                <p class="card-text text-muted">$32.00-$40.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card product-card border-0 h-100">
+              <div class="overflow-hidden rounded">
+                <img src="./Images/6.png" class="card-img-top bg-light product-card-img" alt="Related Product">
+              </div>
+              <div class="card-body px-0 py-2">
+                <h5 class="card-title h6 fw-semibold text-dark mb-1">Xiaomi Redmi 8 Original</h5>
+                <p class="card-text text-muted">$32.00-$40.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 6 -->
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card product-card border-0 h-100">
+              <div class="overflow-hidden rounded">
+                <img src="./Images/222 (3).png" class="card-img-top bg-light product-card-img" alt="Related Product">
+              </div>
+              <div class="card-body px-0 py-2">
+                <h5 class="card-title h6 fw-semibold text-dark mb-1">Xiaomi Redmi 8 Original</h5>
+                <p class="card-text text-muted">$32.00-$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+<div class="container-fluid my-4">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <div class="row justify-content-center align-items-center p-3 bg-primary text-white mb-5">
+        <div class="col-10">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="discount">
+              <h3>Super discount on more than 100 USD</h3>
+              <p><small>Have you ever finally just write dummy info</small></p>
+            </div>
+            <div class="discount-btn">
+              <button class="btn btn-warning text-white text-center">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- Footer section -->
+  <footer class="bg-white text-dark border-top  pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand & Social -->
+        <div class="col-md-2">
+          <h4 class="fw-bold text-primary mb-3">
+            <i class="fa-solid fa-lock"></i> Brand
+          </h4>
+          <p class="text-muted small">Best information <br> about the company </p>
+          <div class="d-flex gap-3" id="footer-media-a">
+            <a href="#" class="text-dark fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">About</h6>
+          <ul class="list-unstyled small" id="footer-about">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">About Us</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Find Store</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Categories</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Partnership -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Partnership</h6>
+          <ul class="list-unstyled small" id="footer-partnership">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Affiliate Program</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Partners</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Collaboration</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Offers</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Information</h6>
+          <ul class="list-unstyled small" id="footer-information">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Help Center</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Money Refund</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Shipping</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- For Users -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">For Users</h6>
+          <ul class="list-unstyled small" id="footer-user">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Login</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Register</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Settings</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">My Orders</a></li>
+          </ul>
+        </div>
+
+        <!-- Get App -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Get App</h6>
+          <a href="https://play.google.com/store" target="_blank" class="d-block mb-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" class="img-fluid" style="max-height: 42px;">
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"
+              class="img-fluid" style="max-height: 60px; height: 48px;">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer Row -->
+      <div class="row mt-4 border-top pt-3 bg-light text-secondary text-center text-md-start">
+        <div class="col-md-6 text-center text-md-start small">
+          © 2025 Ecommerce. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="dropdown">
+            <a href="#" class="text-secondary text-decoration-none dropdown-toggle" id="languageDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              English, USD <i class="fa fa-angle-up"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown" id="footer-lang">
+              <li><a class="dropdown-item" href="#">Urdu, PKR</a></li>
+              <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
+              <li><a class="dropdown-item" href="#">French, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Français, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch, EUR</a></li>
+              <li><a class="dropdown-item" href="#">English, USD</a></li>
+              <li><a class="dropdown-item" href="#">Español, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Italiano, EUR</a></li>
+              <li><a class="dropdown-item" href="#">中文, CNY</a></li>
+              <li><a class="dropdown-item" href="#">日本語, JPY</a></li>
+              <li><a class="dropdown-item" href="#">Português, BRL</a></li>
+              <li><a class="dropdown-item" href="#">Русский, RUB</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe, TRY</a></li>
+              <li><a class="dropdown-item" href="#">हिन्दी, INR</a></li>
+              <li><a class="dropdown-item" href="#">한국어, KRW</a></li>
+              <li><a class="dropdown-item" href="#">فارسی, IRR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Back to Top Button -->
+  <button class="back-to-top btn btn-primary rounded-circle" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <!-- Cart Counter -->
+  <div class="cart-counter badge bg-danger rounded-pill position-fixed d-none"></div>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="position-fixed top-0 start-0 w-100 h-100 d-none">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Share Modal -->
+  <div class="modal fade" id="shareModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Share This Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-around">
+            <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-outline-info"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="btn btn-outline-danger"><i class="fab fa-pinterest"></i></a>
+            <button class="btn btn-outline-secondary copy-link"><i class="fas fa-link"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

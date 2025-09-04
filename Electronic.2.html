@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./Electronic.2.css">
+  
+  <!-- Custom JavaScript -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/enhanced.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Shop the latest electronics including smartphones, laptops, and accessories. Best deals on tech products.">
+  <meta name="keywords" content="electronics, smartphones, laptops, gadgets, tech accessories">
+  <meta name="author" content="Brand">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Electronics - Brand Store">
+  <meta property="og:description" content="Discover the latest tech products at amazing prices. Shop now!">
+  <meta property="og:type" content="website">
+  
+  <!-- Preconnect to External Resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Structured Data for Products -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "Latest Smartphones",
+          "description": "Browse our collection of latest smartphones",
+          "url": "Electronic.2.html#smartphones"
+        },
+        {
+          "@type": "Product",
+          "name": "Laptops",
+          "description": "High-performance laptops for work and gaming",
+          "url": "Electronic.2.html#laptops"
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 shadow-sm">
+    <div class="container">
+      <!-- Brand + Mobile Toggler -->
+      <a href="index.html" class="navbar-brand fs-3 fw-bold text-primary">
+        <i class="fa-solid fa-lock me-2" aria-hidden="true"></i>Brand
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <!-- Left: Search Form -->
+        <form class="d-flex ms-lg-3 my-2 my-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <select class="form-select me-2 d-none d-lg-block">
+            <option>All Categories</option>
+            <option>Mobiles</option>
+            <option>Laptops</option>
+            <option value="laptops">Laptops</option>
+            <option value="tablets">Tablets</option>
+            <option value="accessories">Accessories</option>
+            <option value="smart-watches">Smart Watches</option>
+            <option value="gaming">Gaming</option>
+            <option value="audio">Audio Devices</option>
+            <option value="home-appliances">Home Appliances</option>
+            <option value="cameras">Cameras</option>
+            <option value="printers">Printers & Scanners</option>
+            <option value="networking">Networking</option>
+            <option value="software">Software</option>
+            <option value="wearables">Wearables</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+        <!-- Main Navigation -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="Product.html"><i class="fa-solid fa-list" aria-hidden="true"></i> Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Electronic.2.html"><i class="fa-solid fa-mobile" aria-hidden="true"></i> Electronics</a></li>
+          <li class="nav-item"><a class="nav-link" href="shirt.html"><i class="fa-solid fa-star" aria-hidden="true"></i> Featured</a></li>
+        </ul>
+        
+        <!-- User Navigation -->
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Profile"><i class="fa-solid fa-user" aria-hidden="true"></i> Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Messages"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Messages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" aria-label="Favorites"><i class="fa-solid fa-heart" aria-hidden="true"></i> Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> My Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Secondary Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 border-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNav"
+        aria-controls="secondaryNav" aria-expanded="false" aria-label="Toggle categories">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="secondaryNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="catMenu" role="button" data-bs-toggle="dropdown">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="catMenu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><a class="dropdown-item" href="#">Order History</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Hot Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gift Boxes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="helpMenu" role="button" data-bs-toggle="dropdown">
+              Help
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="helpMenu">
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+              <li><a class="dropdown-item" href="#">Feedback</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Language & Shipping -->
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langMenu" role="button" data-bs-toggle="dropdown">
+              English, USD
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langMenu">
+              <li><a class="dropdown-item" href="#">Français, EUR</a></li>
+              <li><a class="dropdown-item" href="#">English, USD</a></li>
+              <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
+              <li><a class="dropdown-item" href="#">Italiano, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch, EUR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="countryMenu" role="button"
+              data-bs-toggle="dropdown">
+              Ship to <img src="https://flagcdn.com/w20/pk.png" alt="PK Flag" class="ms-1" width="20">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="countryMenu">
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w20/pk.png" class="me-2">Pakistan</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/us.png" class="me-2">United
+                  States</a></li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/au.png" class="me-2">Australia</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/de.png" class="me-2">GermAny</a>
+              </li>
+              <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/ae.png" class="me-2">UAE</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="py-2 bg-light border-bottom">
+    <div class="container-fluid">
+      <div class="row justify-content-center" style="margin-left: 32px;">
+        <div class="col-12 col-md-10">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Clothings</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Men's wear</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Summer clothing</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid py-4">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h4 class="mb-0">12,911 items in Mobile accessory</h4>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" value="" id="verifiedOnly">
+              <label class="form-check-label" for="verifiedOnly">Verified only</label>
+            </div>
+            <span class="me-3">Featured</span>
+            <div class="btn-group me-3" role="group" aria-label="View Toggle">
+              <button type="button" class="btn btn-outline-secondary active">
+                <i class="bi bi-grid-fill"></i>
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="bi bi-list-task"></i>
+              </button>
+            </div>
+            <i class="bi bi-funnel-fill"></i>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="badge rounded-pill bg-light text-dark border py-2 px-3">
+            Samsung <button type="button" class="btn-close ms-2" aria-label="Close"></button>
+          </span>
+          <span class="badge rounded-pill bg-light text-dark border py-2 px-3">
+            Apple <button type="button" class="btn-close ms-2" aria-label="Close"></button>
+          </span>
+          <span class="badge rounded-pill bg-light text-dark border py-2 px-3">
+            Poco <button type="button" class="btn-close ms-2" aria-label="Close"></button>
+          </span>
+          <span class="badge rounded-pill bg-light text-dark border py-2 px-3">
+            Metallic <button type="button" class="btn-close ms-2" aria-label="Close"></button>
+          </span>
+          <span class="badge rounded-pill bg-light text-dark border py-2 px-3">
+            4 star <button type="button" class="btn-close ms-2" aria-label="Close"></button>
+          </span>
+          <span class="badge rounded-pill bg-light text-dark border py-2 px-3">
+            3 star <button type="button" class="btn-close ms-2" aria-label="Close"></button>
+          </span>
+          <a href="#" class="text-decoration-none text-primary align-self-center ms-auto">Clear all filter</a>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="sidebar h-100 rounded-3 shadow-sm p-3">
+              <h5 class="fw-bold mb-3">Category</h5>
+              <ul class="list-unstyled mb-4">
+                <li><a href="#" class="text-decoration-none text-dark">Mobile accessory</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Electronics</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Smartphones</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Modern tech</a></li>
+                <li><a href="#" class="text-decoration-none text-primary">See all</a></li>
+              </ul>
+
+              <h5 class="fw-bold mb-3">Brands</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="samsung" checked>
+                <label class="form-check-label" for="samsung">Samsung</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="apple" checked>
+                <label class="form-check-label" for="apple">Apple</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="huawei">
+                <label class="form-check-label" for="huawei">Huawei</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="poco">
+                <label class="form-check-label" for="poco">Poco</label>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="lenovo">
+                <label class="form-check-label" for="lenovo">Lenovo</label>
+              </div>
+              <a href="#" class="text-primary">See all</a>
+
+              <h5 class="fw-bold mt-4 mb-3">Features</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="metallic">
+                <label class="form-check-label" for="metallic">Metallic</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="plastic">
+                <label class="form-check-label" for="plastic">Plastic cover</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rgb">
+                <label class="form-check-label" for="rgb">8GB Ram</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="superpower">
+                <label class="form-check-label" for="superpower">Super power</label>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="memory">
+                <label class="form-check-label" for="memory">Large Memory</label>
+              </div>
+              <a href="#" class="text-primary">See all</a>
+
+              <h5 class="fw-bold mt-4 mb-3">Price range</h5>
+              <input type="range" class="form-range">
+
+              <h5 class="fw-bold mt-4 mb-3">Condition</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="new">
+                <label class="form-check-label" for="new">New</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="used">
+                <label class="form-check-label" for="used">Used</label>
+              </div>
+              
+              <div class="container-fluid py-4">
+                <div class="row">
+                  <div class="col-lg-2 mb-4">
+                    <div class="sidebar h-100 rounded-3 shadow-sm p-3">
+                      <div class="filter-section mb-4">
+                        <button
+                          class="btn btn-link text-dark fw-bold text-decoration-none p-0 w-100 d-flex justify-content-between align-items-center"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#featuresCollapse"
+                          aria-expanded="true" aria-controls="featuresCollapse">
+                          Features <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="collapse show " id="featuresCollapse">
+                          <ul class="list-unstyled mt-2 ">
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="metallic" checked>
+                                <label class="form-check-label " for="metallic">Metallic</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="plastic">
+                                <label class="form-check-label" for="plastic">Plastic cover</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rgb">
+                                <label class="form-check-label" for="rgb">8GB Ram</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="superpower">
+                                <label class="form-check-label" for="superpower">Super power</label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="memory">
+                                <label class="form-check-label" for="memory">Large Memory</label>
+                              </div>
+                            </li>
+                            <li><a href="#" class="text-primary text-decoration-none d-block mt-2">See all</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-10">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+              <!-- card 1 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/8.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                     <i class="far fa-star text-warning me-1"></i> 7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/7.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="far fa-star text-warning me-1"></i>7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/3.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="far fa-star text-warning me-1"></i> 7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/5.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="far fa-star text-warning me-1"></i>7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/6.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="far fa-star text-warning me-1"></i> 7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/222 (1).png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                       <i class="far fa-star text-warning me-1"></i>7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/222 (3).png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                     <i class="far fa-star text-warning me-1"></i>7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/8.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="far fa-star text-warning me-1"></i>7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 9 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/7.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="far fa-star text-warning me-1"></i>7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/6.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="far fa-star text-warning me-1"></i> 7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 11 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/3.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="far fa-star text-warning me-1"></i> 7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 12 -->
+              <div class="col">
+                <div class="card product-card h-100 shadow-sm border-0 rounded-4 overflow-hidden transition-all"
+                  style="transition: transform 0.3s;">
+                  <div class="product-image-container overflow-hidden">
+                    <img src="./Images/5.png" class="w-100" alt="Product Image">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold text-truncate">GoPro HERO6 4K Action Camera - Black</h6>
+                    <p class="mb-1">
+                      <span class="fw-bold">$99.50</span>
+                      <span class="text-muted text-decoration-line-through ms-2">$112.00</span>
+                    </p>
+                    <div class="d-flex align-items-center mb-2">
+                       <i class="far fa-star text-warning me-1"></i> 7.5
+                    </div>
+                    <button class="btn btn-outline-primary rounded-circle float-end">
+                      <i class="far fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-4">
+              <span class="me-3">Show 10</span>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">&lt;</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Subscribe to our newsletter -->
+  <div class="container-fluid py-5" style="background: linear-gradient(135deg, #0d6efd 0%, #6ea8fe 100%);">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 text-center text-white">
+        <h4 class="fw-bold mb-2">Subscribe on our newsletter</h4>
+        <p class="mb-4">
+          <small>Get daily news on upcoming offers from many suppliers all over the world</small>
+        </p>
+        <!-- Form -->
+        <form class="row g-2 justify-content-center">
+          <div class="col-12 col-md-8">
+            <div class="input-group">
+              <span class="input-group-text bg-white">
+                <i class="fa-solid fa-envelope text-muted"></i>
+              </span>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-12 col-md-auto">
+            <button class="btn btn-light text-primary px-4 fw-bold" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer class="bg-white text-dark border-top  pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand & Social -->
+        <div class="col-md-2">
+          <h4 class="fw-bold text-primary mb-3">
+            <i class="fa-solid fa-lock"></i> Brand
+          </h4>
+          <p class="text-muted small">Best information <br> about the company </p>
+          <div class="d-flex gap-3" id="footer-media-a">
+            <a href="#" class="text-dark fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark fs-5"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">About</h6>
+          <ul class="list-unstyled small" id="footer-about">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">About Us</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Find Store</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Categories</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Partnership -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Partnership</h6>
+          <ul class="list-unstyled small" id="footer-partnership">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Affiliate Program</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Partners</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Collaboration</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Offers</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Information</h6>
+          <ul class="list-unstyled small" id="footer-information">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Help Center</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Money Refund</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Shipping</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- For Users -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">For Users</h6>
+          <ul class="list-unstyled small" id="footer-user">
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Login</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Register</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">Settings</a></li>
+            <li><a href="#" class="text-muted text-decoration-none d-block mb-2">My Orders</a></li>
+          </ul>
+        </div>
+
+        <!-- Get App -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Get App</h6>
+          <a href="https://play.google.com/store" target="_blank" class="d-block mb-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" class="img-fluid" style="max-height: 42px;">
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"
+              class="img-fluid" style="max-height: 60px; height: 48px;">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer Row -->
+      <div class="row mt-4 border-top pt-3 bg-light text-secondary text-center text-md-start">
+        <div class="col-md-6 text-center text-md-start small">
+          © 2025 Ecommerce. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="dropdown">
+            <a href="#" class="text-secondary text-decoration-none dropdown-toggle" id="languageDropdown"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              English, USD <i class="fa fa-angle-up"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown" id="footer-lang">
+              <li><a class="dropdown-item" href="#">Urdu, PKR</a></li>
+              <li><a class="dropdown-item" href="#">Arabic, AED</a></li>
+              <li><a class="dropdown-item" href="#">French, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Français, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch, EUR</a></li>
+              <li><a class="dropdown-item" href="#">English, USD</a></li>
+              <li><a class="dropdown-item" href="#">Español, EUR</a></li>
+              <li><a class="dropdown-item" href="#">Italiano, EUR</a></li>
+              <li><a class="dropdown-item" href="#">中文, CNY</a></li>
+              <li><a class="dropdown-item" href="#">日本語, JPY</a></li>
+              <li><a class="dropdown-item" href="#">Português, BRL</a></li>
+              <li><a class="dropdown-item" href="#">Русский, RUB</a></li>
+              <li><a class="dropdown-item" href="#">Türkçe, TRY</a></li>
+              <li><a class="dropdown-item" href="#">हिन्दी, INR</a></li>
+              <li><a class="dropdown-item" href="#">한국어, KRW</a></li>
+              <li><a class="dropdown-item" href="#">فارسی, IRR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Back to Top Button -->
+  <button class="back-to-top btn btn-primary rounded-circle" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Container -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <!-- Cart Counter -->
+  <div class="cart-counter badge bg-danger rounded-pill position-fixed d-none"></div>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="position-fixed top-0 start-0 w-100 h-100 d-none">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compare Products Modal -->
+  <div class="modal fade" id="compareModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Compare Products</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>Product 1</th>
+                  <th>Product 2</th>
+                  <th>Product 3</th>
+                </tr>
+              </thead>
+              <tbody id="compareTableBody">
+                <!-- Filled dynamically by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specs Modal -->
+  <div class="modal fade" id="specsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Technical Specifications</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <dl class="row" id="specsList">
+            <!-- Filled dynamically by JavaScript -->
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
